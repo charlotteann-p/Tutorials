@@ -1,0 +1,97 @@
+function sayHiTo(person) { console.log('hi, ', person); }
+undefined
+sayHiTo('Gordon')
+VM146:1 hi,  Gordon
+undefined
+var todos = ['item 1', 'item 2', 'item 3']
+undefined
+function displayTodos() {  
+   console.log('My todos:', todos);
+}
+undefined
+displayTodos()
+VM177:2 My todos: (3) ["item 1", "item 2", "item 3"]
+undefined
+function addTodo() {
+   todos.push('new todo');
+}
+undefined
+addTodo()
+undefined
+todos
+(4) ["item 1", "item 2", "item 3", "new todo"]
+addTodo()
+undefined
+displayTodos()
+VM177:2 My todos: (5) ["item 1", "item 2", "item 3", "new todo", "new todo"]
+undefined
+function addTodo() {
+   todos.push('new todo');
+   displayTodos();
+}
+undefined
+addTodo()
+VM177:2 My todos: (6) ["item 1", "item 2", "item 3", "new todo", "new todo", "new todo"]
+undefined
+function addTodo(todo) {
+   todos.push(todo);
+   displayTodos();
+}
+undefined
+addTodo('hello')
+VM177:2 My todos: (7) ["item 1", "item 2", "item 3", "new todo", "new todo", "new todo", "hello"]
+undefined
+function changeTodo(position, newValue) {
+   todos[position] = newValue; 
+}
+undefined
+displayTodos()
+VM177:2 My todos: (7) ["item 1", "item 2", "item 3", "new todo", "new todo", "new todo", "hello"]
+undefined
+changeTodo(0, 'changed')
+undefined
+displayTodos()
+VM177:2 My todos: (7) ["changed", "item 2", "item 3", "new todo", "new todo", "new todo", "hello"]
+undefined
+function changeTodo(position, newValue) {
+   todos[position] = newValue; 
+   displayTodos();
+}
+undefined
+changeTodo(0, 'changed again')
+VM177:2 My todos: (7) ["changed again", "item 2", "item 3", "new todo", "new todo", "new todo", "hello"]
+undefined
+function deleteTodo() {
+   todos.splice(position, 1);
+   displayTodos();
+}
+undefined
+displayTodos()
+VM177:2 My todos: (7) ["changed again", "item 2", "item 3", "new todo", "new todo", "new todo", "hello"]
+undefined
+deleteTodo(0)
+VM333:2 Uncaught ReferenceError: position is not defined
+    at deleteTodo (<anonymous>:2:17)
+    at <anonymous>:1:1
+deleteTodo @ VM333:2
+(anonymous) @ VM343:1
+deleteTodo(0);
+VM333:2 Uncaught ReferenceError: position is not defined
+    at deleteTodo (<anonymous>:2:17)
+    at <anonymous>:1:1
+deleteTodo @ VM333:2
+(anonymous) @ VM347:1
+function deleteTodo(position) {
+   todos.splice(position, 1);
+   displayTodos();
+}
+undefined
+deleteTodo(0)
+VM177:2 My todos: (6) ["item 2", "item 3", "new todo", "new todo", "new todo", "hello"]
+undefined
+deleteTodo(2)
+VM177:2 My todos: (5) ["item 2", "item 3", "new todo", "new todo", "hello"]
+undefined
+deleteTodo(2)
+VM177:2 My todos: (4) ["item 2", "item 3", "new todo", "hello"]
+undefined
