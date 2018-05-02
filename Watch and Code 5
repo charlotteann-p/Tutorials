@@ -1,0 +1,36 @@
+for (var i = 0; i < 20; i = i + 2) {
+    console.log("hey")
+}
+10VM175:2 hey
+undefined
+for (var i = 0; i < 20; i = i + 2) {
+    console.log(i)
+}
+VM178:2 0
+VM178:2 2
+VM178:2 4
+VM178:2 6
+VM178:2 8
+VM178:2 10
+VM178:2 12
+VM178:2 14
+VM178:2 16
+VM178:2 18
+undefined
+var testArray = ['item 1', 'item 2', 'item 3']
+undefined
+testArray[0]
+"item 1"
+for (var i = 0; i < 20; i = i + 2) {
+    console.log(testArray[i]);
+}
+VM319:2 item 1
+VM319:2 item 3
+8VM319:2 undefined
+undefined
+for (var i = 0; i < testArray.length; i = i + 2) {
+    console.log(testArray[i]);
+}
+VM325:2 item 1
+VM325:2 item 3
+undefined
