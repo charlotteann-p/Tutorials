@@ -1,0 +1,12 @@
+document
+#document
+document.getElementById('page-banner')
+<div id=​"page-banner">​…​</div>​
+var banner = document.getElementById('page-banner')
+undefined
+banner
+<div id=​"page-banner">​…​</div>​
+var bookList = document.getElementById('book-list')
+undefined
+bookList
+<div id=​"book-list">​…​</div>​
