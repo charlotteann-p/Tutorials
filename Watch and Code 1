@@ -43,4 +43,4 @@ todos.splice(3, 1)
 todos
 (3) ["item 2", "item 3", "item 4"]
 todos.splice(3, 1)
-[]
+[] 
