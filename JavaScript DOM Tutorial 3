@@ -1,0 +1,24 @@
+document.getElementById('page-banner')
+<div data-cloud9-id=​"10" id=​"page-banner">​…​</div>​
+var pageBanner = document.getElementById('page-banner')
+undefined
+pageBanner
+<div data-cloud9-id=​"10" id=​"page-banner">​…​</div>​
+var titles = document.getElementsByClassName('title')
+undefined
+titles
+HTMLCollection(2) [h1#mainTitle.title, h2.title, mainTitle: h1#mainTitle.title]0: h1#mainTitle.title1: h2.titlelength: 2mainTitle: h1#mainTitle.title__proto__: HTMLCollection
+titles[0]
+<h1 data-cloud9-id=​"11" class=​"title" id=​"mainTitle">​MainTitle​</h1>​
+titles[1]
+<h2 data-cloud9-id=​"16" class=​"title">​Books to Read​</h2>​
+var lis = document.getElementsByTagName('li')
+undefined
+lis
+HTMLCollection(4) [li, li, li, li]
+for(i=0; i < titles.length; i++) {
+  console.log(titles[i])
+}
+VM283:2 <h1 data-cloud9-id=​"11" class=​"title" id=​"mainTitle">​MainTitle​</h1>​
+VM283:2 <h2 data-cloud9-id=​"16" class=​"title">​Books to Read​</h2>​
+undefined
