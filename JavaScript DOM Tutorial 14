@@ -1,0 +1,6 @@
+var book = document.querySelector('li:first-child.name')
+book.getAttribute('href')
+book.setAttribute('class', 'name-2')
+book.hasAttribute('class')
+book.removeAttribute('class')
+book.setAttribute('class', 'name')
