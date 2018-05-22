@@ -1,0 +1,5 @@
+$("#page-title");
+var heading = $("#page-title");
+heading.css({position: "relative"});
+heading.animate({left: 100});
+heading[0]
