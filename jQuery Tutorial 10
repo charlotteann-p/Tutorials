@@ -1,0 +1,24 @@
+// wrap each section tag individually in a div tag
+// $("section").wrap("<div>");
+
+// unwrap the section tag
+// $("section").unwrap();
+
+// wrap all section tags in one div tag
+// $("section").wrapAll("<div>");
+
+var wrapper = "<div class='wrapper'>";
+var button = $(".button");
+var wrapped = true;
+
+button[0].onclick = function() {
+  if (wrapped) {
+    $("section").unwrap();
+    wrapped = false;
+    button.text("Wrap");
+  } else {
+    $("section").wrapAll(wrapper);
+    wrapped = true;
+    button.text("Unwrap");
+  }
+};
