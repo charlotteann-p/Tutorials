@@ -1,0 +1,7 @@
+// .empty() empties the inner html of an element
+$(".button").empty();
+$("#points-of-sale").empty();
+
+// .remove() removes the element
+$(".button").remove();
+$("#contact img").remove();
