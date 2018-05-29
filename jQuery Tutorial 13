@@ -1,0 +1,13 @@
+// check properties of certain ids
+console.log($("#social-nav").css("position"));
+
+// change properties, note the (optional) chaining! 
+$("#social-nav").css("top", "-200px").css("left", "100px");
+
+// applying css with jquery
+$("#social-nav").css({
+  "top": "-400px",
+  "left": "150px",
+  "opacity": "0.5",
+  "border-top": "4px solid red"
+});
