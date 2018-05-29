@@ -1,0 +1,7 @@
+// removing attribute
+$("#contact img").removeAttr("alt");
+
+// change attribute from alt to location
+$("#contact img").attr("alt", "location");
+// read a certain attribute
+console.log($("#contact img").attr("alt"));
