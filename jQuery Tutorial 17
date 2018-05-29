@@ -1,0 +1,9 @@
+// document on ready
+$(document).on("ready", function(){
+  /// your function here
+});
+
+// window load
+$(window).on("load", function(){
+  /// your function here
+});
