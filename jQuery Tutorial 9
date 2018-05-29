@@ -1,0 +1,19 @@
+var tweet = "<div style='margin: 20px 0; padding: 10px; background: #eee'>The big fight live: Ham vs Cheese!</div>";
+
+// append
+$("#tweets div").append(tweet);
+
+// prepend
+$("#tweets div").prepend(tweet);
+
+// before
+$("#tweets div p").before(tweet);
+
+// after 
+$("#tweets div p").after(tweet);
+
+// html (replace the html content within the given tag)
+$("#tweets div").html(tweet);
+
+// text (changes text of element) (var needs to be changed as such: var tweet = "The big fight live: Ham vs Cheese!");)
+$("#tweets div p").text(tweet);
