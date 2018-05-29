@@ -1,0 +1,14 @@
+// remove class
+$("header .wrapper").removeClass("wrapper");
+
+// adding class of wrapper (to the next div)
+$("header > div").addClass("wrapper");
+
+
+// toggling class using a button in the html
+var button = $("#lead-banner a");
+
+button[0].onclick = function() {
+  $("#points-of-sale").toggleClass("open");
+  return false;
+};
